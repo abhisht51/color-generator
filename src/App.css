@@ -6,7 +6,7 @@
 body{
   background-color: rgb(235, 235, 235);
 }
-.card-container{
+/* .card-container{
   height: 200px;
   width: 250px;
   background-color: white;
@@ -66,4 +66,4 @@ transition: all 0.3s ease;
 
 .delete-color img{
   height: 30px;
-}
+} */

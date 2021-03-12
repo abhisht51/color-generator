@@ -1,4 +1,12 @@
-.card-container{
+.App{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body{
+    background-color: rgb(235, 235, 235);
+  }
+  .card-container{
     height: 200px;
     width: 250px;
     background-color: white;
@@ -17,6 +25,7 @@
     box-shadow: 12px 10px 34px -7px rgba(0,0,0,0.72);
   -webkit-box-shadow: 12px 10px 34px -7px rgba(0,0,0,0.72);
   -moz-box-shadow: 12px 10px 34px -7px rgba(0,0,0,0.72);
+    
   }
   
   .card-upper-text{
@@ -30,7 +39,9 @@
   .color-box{
     height: 50%;
     width: 50%;
-    /* border: 2px solid rgb(68, 67, 67); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 10px;
   }
   
@@ -38,4 +49,21 @@
     padding: 1em;
     font-weight: 600;
   
+  }
+  .delete-color{
+    height: 40px;
+    width: 40px;
+    border-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.753);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+  }
+  .delete-color:hover{
+    cursor: pointer;
+  }
+  
+  .delete-color img{
+    height: 30px;
   }
