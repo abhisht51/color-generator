@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.App{
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body{
+  background-color: rgb(235, 235, 235);
+}
+.card-container{
+  height: 200px;
+  width: 250px;
+  background-color: white;
+  margin: 1em;
+  border-radius: 10px;
+  box-shadow: 12px 10px 13px -7px rgba(0,0,0,0.62);
+-webkit-box-shadow: 12px 10px 13px -7px rgba(0,0,0,0.62);
+-moz-box-shadow: 12px 10px 13px -7px rgba(0,0,0,0.62);
+display: flex;
+align-items: center;
+flex-direction: column;
+transition: all 0.3s ease;
+}
+
+.card-container:hover{
+  box-shadow: 12px 10px 34px -7px rgba(0,0,0,0.72);
+-webkit-box-shadow: 12px 10px 34px -7px rgba(0,0,0,0.72);
+-moz-box-shadow: 12px 10px 34px -7px rgba(0,0,0,0.72);
+  
+}
+
+.card-upper-text{
+  padding: 1em;
+  text-align: center;
+  font-weight: 700;
+  font-size:17px;
+  color: rgba(17, 17, 17, 0.685);
+}
+
+.color-box{
+  height: 50%;
+  width: 50%;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.color-name{
+  padding: 1em;
+  font-weight: 600;
+
+}
+.delete-color{
+  height: 40px;
+  width: 40px;
+  border-radius: 40px;
+  background-color: rgba(255, 255, 255, 0.753);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+.delete-color:hover{
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.delete-color img{
+  height: 30px;
 }
