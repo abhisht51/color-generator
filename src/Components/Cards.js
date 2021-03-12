@@ -1,6 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { LOAD_COLORS,COLORS_SUBSCRIPTION } from '../GraphQL/Queries'
-import {gql,useQuery,useSubscription} from '@apollo/client'
+import React from "react";
 import Card from './Card'
 
 const Cards = ({Colors}) => {
@@ -8,7 +6,7 @@ const Cards = ({Colors}) => {
         <div className="grid-container">
             {
                 Colors.map((color) => (
-                    <Card key={color.id} label={color.label} hex={color.hex_val} ></Card>
+                    <Card key={color.hex_val} label={color.label} hex={color.hex_val} ></Card>
                 ))
             }
         </div>

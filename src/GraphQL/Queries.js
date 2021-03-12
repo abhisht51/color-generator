@@ -16,7 +16,6 @@ export const COLORS_SUBSCRIPTION = gql`
   subscription MySubscription {
     Colors {
       hex_val
-      id
       label
     }
   }

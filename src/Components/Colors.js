@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { LOAD_COLORS, COLORS_SUBSCRIPTION } from "../GraphQL/Queries";
-import { gql, useQuery, useSubscription } from "@apollo/client";
+import { useQuery, useSubscription } from "@apollo/client";
 import Cards from "./Cards";
 
 const Colors = () => {

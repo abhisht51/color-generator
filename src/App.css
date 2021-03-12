@@ -1,11 +1,13 @@
 .App{
-  display: flex;
+  /* display: flex; */
   justify-content: center;
   align-items: center;
   background-color:#282c34 ;
 }
 body{
   background-color: rgb(235, 235, 235);
+  background-color:#282c34 ;
+
 }
 .App-header {
   background-color: #b60a99;
@@ -19,14 +21,10 @@ body{
 }
 
 .grid-container{
-  max-width: 1200px;
+  max-width: 2000px;
   margin: 0 auto;
   display: grid;
   grid-gap: 1rem;
-  /* grid-template-columns: repeat(4, 1fr); */
-  /* this is the same as grid-template-rows: 300px 300px; */
-  /* grid-template-rows: repeat(autofit(), 300px); */
-  
   grid-template-rows: repeat(auto-fit,1fr);
 }
 
@@ -45,3 +43,24 @@ body{
 }
 
 
+.title h1{
+  color: #b60a99;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+.title h2, .title p{
+  text-align: center;
+}
+.title h2{
+  margin-top: 60px;
+  font-size: 2.6rem;
+}
+
+.generate-button{
+  background-color: greenyellow;
+  
+  display: flex;
+  align-items: center;
+  border-radius: 10;
+}

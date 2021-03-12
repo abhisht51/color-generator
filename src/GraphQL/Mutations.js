@@ -1,19 +1,13 @@
 import { gql } from "@apollo/client";
 
-export const CREATE_COLOR_MUTATION = gql`
-  mutation createUser(
-    $firstName: String!
-    $lastName: String!
-    $email: String!
-    $password: String
-  ) {
-    createUser(
-      firstName: $firstName
-      lastName: $lastName
-      email: $email
-      password: $password
+export const GENERATE_COLOR_MUTATION = gql`
+  mutation MyMutation($hex_val: String!, $label: String!) {
+    insert_Colors(
+      objects: { hex_val: $hex_val, label: $label }
+      on_conflict: { constraint: Colors_pkey, update_columns: hex_val }
     ) {
-      id
+      affected_rows
     }
   }
 `;
+
