@@ -2,68 +2,46 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color:#282c34 ;
 }
 body{
   background-color: rgb(235, 235, 235);
 }
-/* .card-container{
-  height: 200px;
-  width: 250px;
-  background-color: white;
-  margin: 1em;
-  border-radius: 10px;
-  box-shadow: 12px 10px 13px -7px rgba(0,0,0,0.62);
--webkit-box-shadow: 12px 10px 13px -7px rgba(0,0,0,0.62);
--moz-box-shadow: 12px 10px 13px -7px rgba(0,0,0,0.62);
-display: flex;
-align-items: center;
-flex-direction: column;
-transition: all 0.3s ease;
+.App-header {
+  background-color: #b60a99;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-.card-container:hover{
-  box-shadow: 12px 10px 34px -7px rgba(0,0,0,0.72);
--webkit-box-shadow: 12px 10px 34px -7px rgba(0,0,0,0.72);
--moz-box-shadow: 12px 10px 34px -7px rgba(0,0,0,0.72);
+.grid-container{
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 1rem;
+  /* grid-template-columns: repeat(4, 1fr); */
+  /* this is the same as grid-template-rows: 300px 300px; */
+  /* grid-template-rows: repeat(autofit(), 300px); */
   
+  grid-template-rows: repeat(auto-fit,1fr);
 }
 
-.card-upper-text{
-  padding: 1em;
-  text-align: center;
-  font-weight: 700;
-  font-size:17px;
-  color: rgba(17, 17, 17, 0.685);
+
+@media (min-width: 2500px) {
+  .grid-container { grid-template-columns: repeat(1, 1fr); }
+}
+@media (min-width: 750px) {
+  .grid-container { grid-template-columns: repeat(2, 1fr); }
+}
+@media (min-width: 900px) {
+  .grid-container { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 1000px) {
+  .grid-container { grid-template-columns: repeat(4, 1fr); }
 }
 
-.color-box{
-  height: 50%;
-  width: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 10px;
-}
 
-.color-name{
-  padding: 1em;
-  font-weight: 600;
-
-}
-.delete-color{
-  height: 40px;
-  width: 40px;
-  border-radius: 40px;
-  background-color: rgba(255, 255, 255, 0.753);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-}
-.delete-color:hover{
-  cursor: pointer;
-}
-
-.delete-color img{
-  height: 30px;
-} */

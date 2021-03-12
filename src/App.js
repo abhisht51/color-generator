@@ -10,12 +10,16 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <div className="App">
-        <Colors></Colors>
         <header className="App-header">
-          <Card label="baby" hsla="green" />
-          <Card label="baby" hsla="lightblue" />
-          <Card label="baby" hsla="orange" />
+
         </header>
+        <Colors></Colors>
+
+        {/* <header className="App-header">
+          <Card label="baby" hex="green" />
+          <Card label="baby" hex="#00FFFF" />
+          <Card label="baby" hex="orange" />
+        </header> */}
       </div>
     </ApolloProvider>
   );
