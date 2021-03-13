@@ -9,10 +9,11 @@ const GenerateColor = () => {
   while (randomColor.length !== 6) {
     randomColor += "0";
   }
+  randomColor = "#"+randomColor;
   const generateColor = () => {
     genColor({
       variables: {
-        hex_val: "#" + randomColor,
+        hex_val: randomColor,
         label: labels[Math.floor(Math.random() * 3)],
       },
     });
@@ -24,7 +25,7 @@ const GenerateColor = () => {
 
 
   return (
-    <button onClick={generateColor} className="generate-button">
+    <button  onClick={generateColor} className="generate-button" >
       <h1>Generate New Color</h1>
     </button>
   );
