@@ -11,3 +11,10 @@ export const GENERATE_COLOR_MUTATION = gql`
   }
 `;
 
+export const REMOVE_COLOR = gql`
+  mutation RemoveMutation($hex_val: String!) {
+    delete_Colors_by_pk(hex_val: $hex_val) {
+      hex_val
+    }
+  }
+`;

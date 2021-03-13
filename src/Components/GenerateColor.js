@@ -7,15 +7,14 @@ const GenerateColor = () => {
   let labels = ["Primary", "Secondary", "Background"];
   let id = Math.floor(Math.random() * 16777215);
   const [genColor, { error, data }] = useMutation(GENERATE_COLOR_MUTATION);
-while(randomColor.length !==6){
-    randomColor+="0";
-}
+  while (randomColor.length !== 6) {
+    randomColor += "0";
+  }
   const generateColor = () => {
     genColor({
       variables: {
-        hex_val: "#"+randomColor,
+        hex_val: "#" + randomColor,
         label: labels[Math.floor(Math.random() * 3)],
-        // id: Math.floor(Math.random()*16777215)
       },
     });
 
@@ -24,9 +23,6 @@ while(randomColor.length !==6){
     }
   };
 
-  // const generateColor = () => {
-  //     console.log('clicked');
-  // }
 
   return (
     <button onClick={generateColor} className="generate-button">
