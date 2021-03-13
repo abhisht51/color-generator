@@ -5,8 +5,7 @@ import { useMutation } from "@apollo/client";
 const GenerateColor = () => {
   let randomColor = Math.floor(Math.random() * 16777215).toString(16);
   let labels = ["Primary", "Secondary", "Background"];
-  let id = Math.floor(Math.random() * 16777215);
-  const [genColor, { error, data }] = useMutation(GENERATE_COLOR_MUTATION);
+  const [genColor, { error }] = useMutation(GENERATE_COLOR_MUTATION);
   while (randomColor.length !== 6) {
     randomColor += "0";
   }

@@ -2,10 +2,8 @@ import {
   split,
   InMemoryCache,
   ApolloClient,
-  ApolloProvider,
   HttpLink,
 } from "@apollo/client";
-import { onError } from "@apollo/client/link/error";
 import { WebSocketLink } from '@apollo/client/link/ws';
 import { getMainDefinition } from '@apollo/client/utilities';
 const secret = process.env.REACT_APP_ADMIN_SECRET;
@@ -23,13 +21,6 @@ const httpLink = new HttpLink({
     });
    };
   
-  const errorLink = onError(({ graphqlErrors, networkError }) => {
-    if (graphqlErrors) {
-      graphqlErrors.map(({ message, location, path }) => {
-        return alert(`Graphql error ${message}`);
-      });
-    }
-  });
   
   const wsLink = new WebSocketLink({
     uri: 'wss://colorgeneratorapp.hasura.app/v1/graphql',

@@ -1,7 +1,6 @@
 import "./App.css";
 import { ApolloProvider } from "@apollo/client";
 
-import Card from "./Components/Card";
 import Colors from "./Components/Colors";
 import client from "./GraphQLconfig";
 import Title from "./Components/Title";
@@ -12,7 +11,7 @@ function App() {
       <div className="App">
         <Title />
         <GenerateButton>
-          
+
         </GenerateButton>
         <Colors></Colors>
 

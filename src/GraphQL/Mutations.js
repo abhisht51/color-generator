@@ -18,3 +18,17 @@ export const REMOVE_COLOR = gql`
     }
   }
 `;
+
+export const SET_LABEL = gql`
+  mutation SetLabel(
+      $hex_val: String!
+      $label: String!
+    ) {
+    update_Colors_by_pk(
+      pk_columns: { hex_val: $hex_val }
+      _set: { label: $label }
+    ) {
+      label
+    }
+  }
+`;
