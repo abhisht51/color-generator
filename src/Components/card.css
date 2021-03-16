@@ -2,7 +2,6 @@
   .card-container{
     height: 350px;
     width: 380px;
-    background-color: white;
     margin: 1em;
     border-radius: 10px;
     box-shadow: 12px 10px 13px -7px rgba(0,0,0,0.62);
@@ -26,21 +25,20 @@
     text-align: center;
     font-weight: 700;
     font-size:17px;
-    color: rgba(17, 17, 17, 0.685);
   }
   
   .color-box{
-    /* height: 100%; */
     height: 350px;
     width: 75%;
     display: flex;
     align-items: center;
     justify-content: center;
     border-radius: 8px;
+    border: 1px;
+    border-style: double;
   }
   
   .color-name{
-    /* padding: 1px; */
     font-weight: 600;
   
   }

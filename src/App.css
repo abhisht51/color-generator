@@ -4,29 +4,13 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding-top: 5%;
-  background-color:#282c34 ;
+  padding-top: 1%;
 }
-body{
-  background-color: rgb(235, 235, 235);
-  background-color:#282c34 ;
 
-}
-.App-header {
-  background-color: #b60a99;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 .grid-container{
   max-width: 2000px;
-  padding: 50px 50px 50px 50px;
-  /* margin: 0 auto; */
+  padding: .5rem .5rem .5rem .5rem;
   display: grid;
   grid-template-rows: repeat(auto-fit,1fr);
 }
@@ -47,7 +31,6 @@ body{
 
 
 .title h1{
-  color: #b60a99;
   font-size: 1.2rem;
   letter-spacing: 2px;
   font-weight: normal;
